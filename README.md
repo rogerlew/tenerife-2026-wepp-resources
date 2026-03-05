@@ -16,11 +16,10 @@ WEPP_files/
 ├── climate/                # Climate and station data
 │   ├── climate_files/      # CLIGEN daily climate files (.cli)
 │   ├── station_par_files/  # CLIGEN parameter files (.par)
-│   ├── stations.csv        # Station metadata
-│   └── stations.xlsx       # Station metadata (original)
+│   └── stations.csv        # Station metadata (62 stations)
 └── soil/                   # Soil data
     ├── soil_files/         # WEPP soil parameter files (.sol)
-    └── soil_map/           # Soil raster maps
+    └── soil_map/           # Soil raster maps (GeoTIFF)
         ├── tf_soil_5.tif   # 5m resolution soil map
         ├── tf_soil_10.tif  # 10m resolution soil map
         └── tf_soil_25.tif  # 25m resolution soil map
