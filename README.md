@@ -30,7 +30,7 @@ WEPP_files/
 
 ### DEM Hosting
 
-DEMs are hosted on: `wepp1.tail305ec9.ts.net` (wmesque2)
+DEMs are hosted on: `wepp.cloud` (wmesque2)
 
 ### Configuration Files
 
