@@ -90,7 +90,7 @@ Created comprehensive README.md files:
 
 ### DEM Hosting
 
-DEMs to be hosted on: `wepp1.tail305ec9.ts.net` (wmesque2 service)
+DEMs to be hosted on: `wepp.cloud` (wmesque2 service)
 
 Expected paths on server:
 - `/geodata/tenerife/MDT05_Tenerife.tif` (5m DEM)
