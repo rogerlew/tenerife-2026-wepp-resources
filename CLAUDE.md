@@ -75,8 +75,8 @@ DEMs are hosted on `wepp1.tail305ec9.ts.net` via wmesque2 service:
 ### Verify DEM Access
 
 ```bash
-curl "https://wepp1.tail305ec9.ts.net/webservices/wmesque2/catalog"
-curl -o test.tif "https://wepp1.tail305ec9.ts.net/webservices/wmesque2/retrieve/tenerife/MDT05_Tenerife?bbox=-16.6,28.2,-16.5,28.3&cellsize=100"
+curl "https://wepp.cloud/webservices/wmesque2/catalog"
+curl -o test.tif "https://wepp.cloud/webservices/wmesque2/retrieve/tenerife/MDT05_Tenerife?bbox=-16.6,28.2,-16.5,28.3&cellsize=100"
 ```
 
 ## Normalizations Applied (raw → main)
@@ -108,15 +108,6 @@ rclone sync "gdrive,shared_with_me:WEPP_files" /path/to/dest --drive-shared-with
 
 ```bash
 gdal_translate -of GTiff tf_soil_5 tf_soil_5.tif
-```
-
-### Update wmesque2 Catalog on wepp1
-
-```bash
-ssh wepp1.tail305ec9.ts.net "cat >> /geodata/catalog << 'EOF'
-/geodata/new_dataset/path
-EOF"
-# Catalog is read live, no restart needed
 ```
 
 ### Create VRT for wmesque2
